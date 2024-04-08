@@ -1,0 +1,131 @@
+.mobileMenu-button {
+    display: none;
+    margin-left: 24px;
+    cursor: pointer;
+
+    @media screen and (max-width: 900px) {
+        display: block;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    background-color: rgba(252, 252, 252, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    & a:active {
+        color: #006CD8;
+    }
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+    @media screen and (max-width: 568px) and (max-height: 450px) {
+        top: -15px;
+    }
+
+    @media screen and (max-height: 450px) {
+        top: 15px;
+    }
+
+    @media screen and (max-width: 320px) {
+        top: 10%;
+    }
+}
+
+.mobile-navigation {
+    border-bottom: 1px dashed #006CD8;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    &>a {
+        font-family: Inter;
+        font-size: 46px;
+        color: #666666;
+        display: block;
+        transition: 0.3s;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 428px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 320px) {
+            font-size: 23px;
+        }
+    }
+}
+
+.overlay .closebtn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 60px;
+}
+
+.address>a,
+.workTime {
+    display: block;
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 14.5px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.workTime {
+    margin-bottom: 0;
+}
+
+.address>a>img,
+.workTime>img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 25px;
+    }
+
+    .address>a,
+    .workTime {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .address>a,
+    .workTime {
+            font-size: 15px;
+            margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 0;
+        right: 15px;
+    }
+}

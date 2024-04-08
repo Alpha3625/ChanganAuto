@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "sass": "^1.74.1"
+  },
+  "scripts": {
+    "sass:watch": "node sass-config.js && sass --watch src/sass/styles.scss:src/css/styles.min.css --style compressed --no-source-map"
+}
+}

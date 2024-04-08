@@ -1,0 +1,111 @@
+.header {
+    box-shadow: 0 0 15px 0 #CECECE;
+
+    &__content {
+        border-bottom: 1px solid #CECECE;
+        padding: 12px 0;
+    }
+
+    &__content>.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__footer {
+        padding: 12px 0;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    &__footer>.container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__footer-address {
+        display: flex;
+        align-items: center;
+    }
+
+    &__footer-address>a,
+    &__footer-workTime {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.5px;
+        color: #666666;
+    }
+
+    &__footer-address>a:first-child {
+        margin-right: 32px;
+    }
+
+    &__footer-address>a>img,
+    &__footer-workTime>img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}
+
+// Navigation_____________________________
+.nav {
+    margin-right: 56px;
+
+    &__link {
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19.5px;
+        color: #666666;
+        cursor: pointer;
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+// requestCall-button_____________________________
+.requestCall-button {
+    width: 204px;
+    height: 40px;
+    background-color: #0B457F;
+    border-radius: 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.400000006px;
+    color: #FBFBFB;
+
+    &:hover {
+        background-color: #006CD8;
+    }
+
+    &:active {
+        background-color: #006CD8;
+    }
+
+    @media screen and (max-width: 444px) {
+        display: none;
+    }
+}

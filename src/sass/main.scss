@@ -1,0 +1,20 @@
+.main {
+    padding: 56px 0;
+
+    &__title {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        color: #3E3E3E;
+        max-width: 858px;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: 444px) {
+            font-size: 16px;
+            line-height: 19.36px;
+            max-width: 335px;
+            margin: 0 auto 24px;
+        }
+    }
+}

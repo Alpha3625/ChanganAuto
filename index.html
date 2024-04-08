@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.min.css">
+    <link rel="shortcut icon" href="./src/assets/icons/brand.png">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="container">
+                <a class="header__logo" href="#">
+                    <img src="./src/assets/icons/logo.svg" alt="Changan Auto">
+                </a>
+                <div class="header__navigation">
+                    <nav class="nav">
+                        <a class="nav__link" href="">Автомобили в наличии</a>
+                        <a class="nav__link" href="">Спецпредложения</a>
+                        <a class="nav__link" href="">Продать авто</a>
+                        <a class="nav__link" href="">Сервис</a>
+                        <a class="nav__link" href="">Контакты</a>
+                    </nav>
+                    <button class="requestCall-button" type="button">
+                        Заказать звонок
+                    </button>
+                    <div class="mobileMenu-button" onclick="openNav()">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.375 29.2917C8.375 30.0971 9.02792 30.75 9.83333 30.75H33.1667C33.9721 30.75 34.625 30.0971 34.625 29.2917C34.625 28.4863 33.9721 27.8333 33.1667 27.8333H9.83333C9.02792 27.8333 8.375 28.4863 8.375 29.2917ZM8.375 22C8.375 22.8054 9.02792 23.4583 9.83333 23.4583H33.1667C33.9721 23.4583 34.625 22.8054 34.625 22C34.625 21.1946 33.9721 20.5417 33.1667 20.5417H9.83333C9.02792 20.5417 8.375 21.1946 8.375 22ZM9.83333 13.25C9.02792 13.25 8.375 13.9029 8.375 14.7083C8.375 15.5137 9.02792 16.1667 9.83333 16.1667H33.1667C33.9721 16.1667 34.625 15.5137 34.625 14.7083C34.625 13.9029 33.9721 13.25 33.1667 13.25H9.83333Z" fill="#0B457F"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__footer">
+            <div class="container">
+                <div class="header__footer-address">
+                    <a href="#">
+                        <img src="./src/assets/icons/map-pin.svg" alt="...">
+                        Олимпийский просп., 5, стр. 1, Москва
+                    </a>
+                    <a href="#">
+                        <img src="./src/assets/icons/route-icon.svg" alt="...">
+                        Проложить маршрут
+                    </a>
+                </div>
+                <p class="header__footer-workTime">
+                    <img src="./src/assets/icons/clock.svg" alt="...">
+                    9:00 - 21:00 (ежедневно)
+                </p>
+            </div>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a class="closebtn" onclick="closeNav()">
+                <svg width="50" height="50" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.542 15.2799L28.7208 13.4587L21.5003 20.6791L14.2799 13.4587L12.4587 15.2799L19.6791 22.5003L12.4587 29.7208L14.2799 31.542L21.5003 24.3216L28.7208 31.542L30.542 29.7208L23.3216 22.5003L30.542 15.2799Z" fill="#0B457F"/>
+                </svg>
+            </a>
+            <div class="overlay-content">
+                <div class="mobile-navigation">
+                    <a href="#">Автомобили в наличии</a>
+                    <a href="#">Спецпредложения</a>
+                    <a href="#">Продать авто</a>
+                    <a href="#">Сервис</a>
+                    <a href="#">Контакты</a>
+                </div>
+
+                <div class="overlay-footer">
+                    <div class="address">
+                        <a href="#">
+                            <img src="./src/assets/icons/map-pin.svg" alt="...">
+                            Олимпийский просп., 5, стр. 1, Москва
+                        </a>
+                        <a href="#">
+                            <img src="./src/assets/icons/route-icon.svg" alt="...">
+                            Проложить маршрут
+                        </a>
+                    </div>
+                    <p class="workTime">
+                        <img src="./src/assets/icons/clock.svg" alt="...">
+                        9:00 - 21:00 (ежедневно)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main__content container">
+                <h1 class="main__title">Теперь услуги дилерского центра Вы можете можете получить онлайн!</h1>
+                <div class="cards">
+                    <div class="card card-1">
+                        <h4>Диагностика автомобиля перед покупкой</h4>
+                        <p>Расскажем обо всех скрытых дефектах автомобиля с пробегом</p>
+                        <button type="button">Записаться</button>
+                        <img class="card-img card-img-1" src="./src/assets/images/toyota-and-honda.png" alt="...">
+                    </div>
+                    <div class="card card-2">
+                        <h4>Онлайн показ автомобиля по видеосвязи</h4>
+                        <p>Проведем онлайн-показ интересующего автомобиля в удобное для Вас время</p>
+                        <button type="button">Оставить заявку</button>
+                        <img class="card-img card-img-2" src="./src/assets/images/KN.png" alt="...">
+                    </div>
+                    <div class="card card-3">
+                        <h4>Онлайн бронирование</h4>
+                        <p>Забронируйте понравившийся автомобиль без визита в дилерский центр</p>
+                        <button type="button">Забронировать</button>
+                        <img class="card-img card-img-3" src="./src/assets/images/smartPhone.png" alt="...">
+                    </div>
+                    <div class="cards-column">
+                        <div class="card card-2">
+                            <h4>Онлайн показ автомобиля по видеосвязи</h4>
+                            <p>Проведем онлайн-показ интересующего автомобиля в удобное для Вас время</p>
+                            <button type="button">Оставить заявку</button>
+                            <img class="card-img card-img-play" src="./src/assets/images/play.png" alt="...">
+                            <img class="card-img card-img-2" src="./src/assets/images/large-KN.png" alt="...">
+                        </div>
+                        <div class="card card-3">
+                            <h4>Онлайн бронирование</h4>
+                            <p>Забронируйте понравившийся автомобиль без визита в дилерский центр</p>
+                            <button type="button">Забронировать</button>
+                            <img class="card-img card-img-3" src="./src/assets/images/large-smartPhone.png" alt="...">
+                        </div>
+                    </div>
+                    <div class="card card-4">
+                        <h4>Онлайн оценка автомобиля с пробегом</h4>
+                        <p>Узнайте предварительную стоимость автомобиля за 1 мин, указав его параметры</p>
+                        <button type="button">Оценить</button>
+                        <img class="card-img card-img-large-mercedes" src="./src/assets/images/large-mercedes.png" alt="...">
+                        <img class="card-img card-img-mercedes" src="./src/assets/images/mercedes.png" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
