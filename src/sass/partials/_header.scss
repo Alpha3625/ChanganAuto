@@ -1,8 +1,10 @@
+@use '../base/variable.scss'as var;
+
 .header {
-    box-shadow: 0 0 15px 0 #CECECE;
+    box-shadow: 0 0 15px 0 var.$light-gray;
 
     &__content {
-        border-bottom: 1px solid #CECECE;
+        border-bottom: 1px solid var.$light-gray;
         padding: 12px 0;
     }
 
@@ -42,11 +44,10 @@
 
     &__footer-address>a,
     &__footer-workTime {
-        font-family: Inter;
         font-size: 12px;
         font-weight: 400;
         line-height: 14.5px;
-        color: #666666;
+        color: var.$headerText;
     }
 
     &__footer-address>a:first-child {
@@ -66,11 +67,10 @@
     margin-right: 56px;
 
     &__link {
-        font-family: Inter;
         font-size: 13px;
         font-weight: 400;
         line-height: 19.5px;
-        color: #666666;
+        color: var.$headerText;
         cursor: pointer;
         margin-right: 32px;
 
@@ -88,21 +88,20 @@
 .requestCall-button {
     width: 204px;
     height: 40px;
-    background-color: #0B457F;
+    background-color: var.$blue;
     border-radius: 12px;
-    font-family: Inter;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.400000006px;
-    color: #FBFBFB;
+    color: var.$white-2;
 
     &:hover {
-        background-color: #006CD8;
+        background-color: var.$light-blue;
     }
 
     &:active {
-        background-color: #006CD8;
+        background-color: var.$light-blue;
     }
 
     @media screen and (max-width: 444px) {

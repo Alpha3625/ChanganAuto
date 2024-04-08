@@ -1,6 +1,6 @@
-@use './reset.scss';
-@use './variable.scss';
-@use './header.scss';
-@use './mobileNav.scss';
-@use './main.scss';
-@use './cards.scss';
+@use './base/reset';
+@use './base/variable.scss';
+@use './partials/header';
+@use './partials/mobileNav.scss';
+@use './partials/main.scss';
+@use './partials/cards.scss';

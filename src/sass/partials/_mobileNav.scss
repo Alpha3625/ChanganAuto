@@ -1,3 +1,5 @@
+@use '../base/variable.scss'as var;
+
 .mobileMenu-button {
     display: none;
     margin-left: 24px;
@@ -15,12 +17,12 @@
     z-index: 2000;
     left: 0;
     top: 0;
-    background-color: rgba(252, 252, 252, 0.9);
+    background-color: var.$overlayBg;
     overflow-x: hidden;
     transition: 0.5s;
 
     & a:active {
-        color: #006CD8;
+        color: var.$light-blue;
     }
 }
 
@@ -45,24 +47,23 @@
 }
 
 .mobile-navigation {
-    border-bottom: 1px dashed #006CD8;
+    border-bottom: 1px dashed var.$light-blue;
     padding-bottom: 10px;
     margin-bottom: 15px;
 
     &>a {
-        font-family: Inter;
-        font-size: 46px;
-        color: #666666;
+        font-size: 40px;
+        color: var.$headerText;
         display: block;
         transition: 0.3s;
         margin-bottom: 10px;
 
         @media screen and (max-width: 428px) {
-            font-size: 30px;
+            font-size: 26px;
         }
 
         @media screen and (max-width: 320px) {
-            font-size: 23px;
+            font-size: 22px;
         }
     }
 }
@@ -78,11 +79,10 @@
 .address>a,
 .workTime {
     display: block;
-    font-family: Inter;
     font-size: 23px;
     font-weight: 400;
     line-height: 14.5px;
-    color: #666666;
+    color: var.$headerText;
     margin-bottom: 30px;
 }
 
@@ -115,10 +115,11 @@
 }
 
 @media screen and (max-width: 450px) {
+
     .address>a,
     .workTime {
-            font-size: 15px;
-            margin-bottom: 15px;
+        font-size: 12px;
+        margin-bottom: 15px;
     }
 }
 

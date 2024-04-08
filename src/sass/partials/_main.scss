@@ -1,12 +1,13 @@
+@use '../base/variable.scss'as var;
+
 .main {
     padding: 56px 0;
 
     &__title {
-        font-family: Inter;
         font-size: 24px;
         font-weight: 500;
         line-height: 29px;
-        color: #3E3E3E;
+        color: var.$mainTitle;
         max-width: 858px;
         margin-bottom: 32px;
 
