@@ -95,13 +95,15 @@
     line-height: 24px;
     letter-spacing: 0.400000006px;
     color: var.$white-2;
-
+    touch-action: manipulation;
     &:hover {
         background-color: var.$light-blue;
+        touch-action: manipulation;
     }
 
     &:active {
         background-color: var.$light-blue;
+        touch-action: manipulation;
     }
 
     @media screen and (max-width: 444px) {
