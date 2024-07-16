@@ -15,4 +15,4 @@
     npm run sass:watch
 ```
 
-## Ссылка: [GitHub Pages](https://artyomxxx.github.io/ChanganAuto/)
+## Ссылка: [GitHub Pages](https://alpha3625.github.io/ChanganAuto/)
